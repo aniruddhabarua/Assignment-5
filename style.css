@@ -1,0 +1,13 @@
+*{
+    margin: 0 auto;
+}
+
+.login-container{
+    display: flex;
+    border: 1px solid red;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+}
