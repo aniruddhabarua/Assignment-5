@@ -46,7 +46,7 @@ img{
 
 .search-input {
   border: 1px solid #d1d5db;
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 16px;
   font-size: 14px;
   color: grey;
@@ -58,9 +58,111 @@ img{
   background: #6c47ff;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 16px;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
+}
+
+/* main */
+.main-container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+}
+
+/* all tabs */
+.tab-container {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  height: 88px;
+  padding: 24px 710px 24px 24px;
+}
+
+.tab-btn {
+  border: none;
+  background: transparent;
+  padding: 8px 22px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  /* transition: background 0.18s, color 0.18s; */
+}
+
+.tab-btn:hover {
+  background: whitesmoke;
+  color: #64748B;
+}
+
+.tab-btn.active {
+  background: #6c47ff;
+  color: white;
+  font-weight: 600;
+}
+
+/* issues */
+.issues-container {
+  background: white;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.issues-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.issues-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.issues-count {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.issues-subtitle {
+  font-size: 14px;
+  color: gray;
+}
+
+.issues-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: gray;
+  font-weight: 500;
+}
+
+.issues-status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.open-dot {
+    background: green;
+}
+.closed-dot {
+    background: purple;
 }

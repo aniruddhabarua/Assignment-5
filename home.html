@@ -23,6 +23,28 @@
       <button class="nav-button" id="newIssueBtn">+ New Issue</button>
     </div>
   </nav>
+  <main class="main-container">
+    <div class="tab-container">
+      <button class="tab-btn active" data-filter="all">All</button>
+      <button class="tab-btn" data-filter="open">Open</button>
+      <button class="tab-btn" data-filter="closed">Closed</button>
+    </div>
+    <div class="issues-container">
+      <div class="issues-left">
+        <div class="issues-icon">
+            <img src="assets/Aperture.png" alt="">
+        </div>
+        <div>
+          <div class="issues-count"><span id="issueCount">0</span> Issues</div>
+          <div class="issues-subtitle">Track and manage your project issues</div>
+        </div>
+      </div>
+      <div class="issues-right">
+        <span class="issues-status open-dot"></span><span>Open</span>
+        <span class="issues-status closed-dot"></span><span>Closed</span>
+      </div>
+    </div>
+  </main>
     <script src="home.js"></script>    
 </body>
 </html>
