@@ -1,0 +1,66 @@
+/* shared */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.font-geist{
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+}
+/* home page */
+
+/* navbar */
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 32px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+img{
+    max-width: 36px;
+    max-height: 37px;
+}
+
+.nav-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-input {
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 16px;
+  font-size: 14px;
+  color: grey;
+  width: 220px;
+  margin-left: 10px;
+}
+
+.nav-button {
+  background: #6c47ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
