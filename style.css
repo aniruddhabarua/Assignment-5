@@ -1,13 +1,102 @@
+/* shared */
 *{
-    margin: 0 auto;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.font-geist{
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* login page */
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .login-container{
-    display: flex;
-    border: 1px solid red;
+    margin-top: 50px;
+    width:100%;
+    max-width:520px;
+    max-height: 743px;
 }
 
-.login-form{
-    display: flex;
-    flex-direction: column;
+.login-card{
+    background:white;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    text-align:center;
 }
+
+.login-logo img{
+    width: 60px;
+    margin-bottom:10px;
+}
+
+.login-card h2{
+    margin-bottom:5px;
+}
+
+.login-subtitle{
+    color: gray;
+    margin-bottom:25px;
+}
+
+form{
+    text-align:left;
+}
+
+label{
+    font: bolder;
+    font-weight: 400;
+    display:block;
+    margin-top:10px;
+}
+
+input{
+    width: 100%;
+    padding: 16px;
+    margin-top: 5px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+}
+
+.default{
+    color: #4A00FF;
+    font-size: 12px;
+}
+
+button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #4A00FF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity:0.9;
+    
+}
+
+.login-divider{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.login-demo{
+    background: whitesmoke;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* home page */
