@@ -116,6 +116,7 @@ img{
   justify-content: space-between;
   border-radius: 8px;
   box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
 }
 
 .issues-left {
@@ -165,4 +166,58 @@ img{
 }
 .closed-dot {
     background: purple;
+}
+
+/* issue cards */
+
+#allIssues {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.issue-card {
+  background: white;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  padding: 16px;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  border-top: 3px solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 256px;
+  width: 256px;
+}
+
+.issue-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.01);
+}
+
+.issue-up{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.issue-card h2{
+    font-size: 16px;
+}
+
+.issue-card p{
+    font-size: 12px;
+}
+
+.issue-subtitle{
+    color: gray;
+}
+
+.open-card {
+  border-top-color: green;
+}
+
+.closed-card {
+  border-top-color: purple;
 }
